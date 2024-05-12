@@ -100,7 +100,7 @@ session_start() && !empty($_SESSION['login'])) {
 // TODO: загрузить данные пользователя из БД
 $userLogin = $_SESSION['login'];
 
-$db = new PDO('mysql:host=localhost;dbname=u67332', user, pass,
+$db = new PDO('mysql:host=localhost;dbname=u67342', 'u67342', '1591330',
     [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]); // Заменить test на имя БД, совпадает с логином uXXXXX
 
 // Подготовленный запрос. Не именованные метки.
