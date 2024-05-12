@@ -261,7 +261,7 @@ else
   print('Валидация прошла успешно!');
   // Сохранение в базу данных.
 
-  $db = new PDO('mysql:host=localhost;dbname=u67332', user, pass,
+  $db = new PDO('mysql:host=localhost;dbname=u67332', 'u67342', '1591330',
     [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]); // Заменить test на имя БД, совпадает с логином uXXXXX
 // Проверяем меняются ли ранее сохраненные данные или отправляются новые.
 if (!empty($_COOKIE[session_name()]) &&
